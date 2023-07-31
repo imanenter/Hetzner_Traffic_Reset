@@ -36,7 +36,7 @@ for server in data['servers']:
     percent_usage=outgoing_traffic/included_traffic
 
 ############################## Take snapshot
-    if (float(percent_usage)<0.00000001):
+    if (float(percent_usage)>0.8):
         print('server '+name+' has high data usage')
 
         now = datetime.now()
